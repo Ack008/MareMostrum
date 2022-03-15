@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | MareMostrum</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      body,html{width: 100%; height: 56vw; }
+    </style>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 97%; height: 97vh; background: #231F20"></canvas>
-    <script src="Build/webgl4.loader.js"></script>
+    <canvas id="unity-canvas" width=960 height=600 style="width: 80%; height: 80%; background: #231F20"></canvas>
+    <script src="Build/Webgl6.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/webgl4.data",
-        frameworkUrl: "Build/webgl4.framework.js",
-        codeUrl: "Build/webgl4.wasm",
+        dataUrl: "Build/Webgl6.data",
+        frameworkUrl: "Build/Webgl6.framework.js",
+        codeUrl: "Build/Webgl6.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MareMostrum",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+         //matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
