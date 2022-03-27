@@ -6,17 +6,19 @@
     <title>Unity WebGL Player | MareMostrum</title>
     <style>
       *{margin: 0; padding: 0;}
-      html,body{width: 100%; height: 56vw; overflow-y: hidden;}
+      html,body{
+        width: 100%; height: 56vh;
+      }
     </style>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 80%; height: 80%; background: #231F20"></canvas>
-    <script src="Build/webgl9.loader.js"></script>
+    <script src="Build/webgl10.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/webgl9.data",
-        frameworkUrl: "Build/webgl9.framework.js",
-        codeUrl: "Build/webgl9.wasm",
+        dataUrl: "Build/webgl10.data",
+        frameworkUrl: "Build/webgl10.framework.js",
+        codeUrl: "Build/webgl10.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MareMostrum",
