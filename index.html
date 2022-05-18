@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Recovery Land</title>
     <style>
       *{ padding: 0; margin: 0;}
       body,html{
@@ -11,16 +12,15 @@
         overflow: hidden;
       }
     </style>
-    <title>Unity WebGL Player | Recovery Land</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 87%; height: 87%; background: #231F20"></canvas>
-    <script src="Build/Webgl15.loader.js"></script>
+    <script src="Build/Webgl16.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Webgl15.data",
-        frameworkUrl: "Build/Webgl15.framework.js",
-        codeUrl: "Build/Webgl15.wasm",
+        dataUrl: "Build/Webgl16.data",
+        frameworkUrl: "Build/Webgl16.framework.js",
+        codeUrl: "Build/Webgl16.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Recovery Land",
